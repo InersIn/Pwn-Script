@@ -20,7 +20,7 @@ qemu-system-x86_64 \
     -smp cores=2 \
 ```
 ## And run gdb, then use `target remote :1234` to connect to qemu.
-## To add breakpoint in gdb, first find the base address of the ko file, by opening file `/dev/<device name>`, device name can find in ko file.
+## To add breakpoint in gdb, first find the base address of the ko file, by opening file `/dev/<drive name>`, driver name can find in ko file.
 
 
 for more details, will create the tutorial in https://inersin.medium.com (tbc)
