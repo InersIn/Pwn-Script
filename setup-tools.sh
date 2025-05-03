@@ -6,6 +6,7 @@ cd pwndbg
 ./setup.sh
 cd ..
 mv pwndbg ~/pwndbg-src
+echo "source ~/pwndbg-src/gdbinit.py" > ~/.gdbinit_pwndbg
 
 echo "[+] Setup peda"
 git clone https://github.com/longld/peda.git ~/peda
