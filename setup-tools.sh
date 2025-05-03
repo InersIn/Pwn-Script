@@ -6,7 +6,6 @@ cd pwndbg
 ./setup.sh
 cd ..
 mv pwndbg ~/pwndbg-src
-echo "source ~/pwndbg-src/gdbinit.py" > ~/.gdbinit_pwndbg
 
 echo "[+] Setup peda"
 git clone https://github.com/longld/peda.git ~/peda
@@ -16,7 +15,7 @@ wget -q -O ~/.gdbinit-gef.py https://github.com/hugsy/gef/raw/master/gef.py
 
 echo "[+] Combine All"
 
-cat << EOF >> ~/.gdbinit
+cat << EOF > ~/.gdbinit
 define init-peda
 source ~/peda/peda.py
 end
