@@ -12,7 +12,7 @@ echo "[+] Setup peda"
 git clone https://github.com/longld/peda.git ~/peda
 
 echo "[+] Setup gef"
-wget -q -O ~/.gdbinit-gef.py https://github.com/hugsy/gef/raw/master/gef.py
+wget -O ~/.gdbinit-gef.py -q https://gef.blah.cat/py
 
 echo "[+] Combine All"
 
